@@ -49,4 +49,19 @@ module.exports = merge(common, {
         // }),
         new webpack.HotModuleReplacementPlugin()
     ]
+},
+module.exports = {
+  // ... otras configuraciones
+  module: {
+    rules: [
+      {
+        test: /\.(mp4|mov|webm)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'videos/',
+        },
+      },
+    ],
+  },
 });

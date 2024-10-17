@@ -5,3 +5,11 @@
     one more css for each page that will contain the selected used 
     on that page only (the ones not reused in other pages).
 */
+color{
+    background-color: rgb(255, 255, 17);
+}
+
+.profile-img{
+    height: 450px;
+    width: 450px;
+}
